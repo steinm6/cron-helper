@@ -31,7 +31,7 @@ Here is a basic example on how to use the CronHelper:
 use steinm6\CronHelper\CronHelper;
 
 // Initialize CronHelper
-$cron = new CronHelper('error_mail_testing');
+$cron = new CronHelper('lockfile-name');
 
 // lock this job
 if ($cron->lock()) {
