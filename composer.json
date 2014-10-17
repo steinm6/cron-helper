@@ -1,0 +1,16 @@
+{
+    "name": "steinm6/cron-helper",
+    "description": "Simple helper to prevent parallel cronjob execution",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Matthias Stein",
+            "email": "info@steinm.com"
+        }
+    ],
+    "autoload": {
+       "psr-0" : {
+          "steinm6\\CronHelper" : "src"
+        }
+    }
+}
