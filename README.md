@@ -28,6 +28,8 @@ To lock the execution call the lock()-function. To unlock the cronjob use the un
 Here is a basic example on how to use the CronHelper:
 
 ```php
+use steinm6\CronHelper\CronHelper;
+
 // Initialize CronHelper
 $cron = new CronHelper('error_mail_testing');
 
