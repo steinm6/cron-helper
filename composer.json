@@ -9,8 +9,8 @@
         }
     ],
     "autoload": {
-       "psr-0" : {
-          "steinm6\\CronHelper" : "src"
+       "psr-4" : {
+          "steinm6\\CronHelper" : "src/"
         }
     }
 }
