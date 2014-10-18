@@ -23,7 +23,7 @@ Initialize the CronHelper with a filename. The CronHelper will use this filename
 
 <code>$cron = new CronHelper('myfilename');</code>
 
-To lock the execution call the lock()-function. To unlock the cronjob use the unlock()-function. You may determine how long the cronjob is locked call the getLockDuration()-function, which returns the time passed since the lock() in seconds.
+To lock the execution call the lock()-function. To unlock the cronjob use the unlock()-function. You may determine how long the cronjob was locked by calling the getLockDuration()-function, which returns the time passed since the lock() in seconds.
 
 Here is a basic example on how to use the CronHelper:
 
