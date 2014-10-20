@@ -31,11 +31,18 @@ class CronHelper
 	public function lock()
 	{
 		if (flock($this->file, LOCK_EX | LOCK_NB)) {
-			file_put_contents($this->filename . "time", time()); // store starttime
+			file_put_contents($this->filename . "time", time());
 			return true;
 		}
 
 		return false;
+	}
+
+	/**
+	 * Sets the time in the locktime-file to now
+	 */
+	public function resetTimer(){
+		file_put_contents($this->filename . "time", time());
 	}
 
 	/**
