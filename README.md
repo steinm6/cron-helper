@@ -35,10 +35,13 @@ $cron = new CronHelper('lockfile-name');
 
 // lock this job
 if ($cron->lock()) {
-
-  // Do something
-	sleep(10);
-
+	foreach($x as $y){
+		// You might want to reset the timer, to prevent running into the unlock() below...
+		$cron->resetTimer();
+		
+		// Do something
+		sleep(10);
+	}
 	$cron->unlock();
 } else {
   // If the lock persists for 3600 seconds, something went wrong. Remove the lock so that the next cronjob is executed.
